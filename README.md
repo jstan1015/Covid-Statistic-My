@@ -31,5 +31,5 @@ npm run lint
 [Jason Tan](https://github.com/jstan1015)
 
 ## :bookmark_tabs: Licenses
-This project is licensed under the MIT license. See the [LICENSE](https://github.com/jonathanlee06/WellSafe/blob/master/LICENSE) file for more info.
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/jstan1015/Covid-Statistic-My/blob/master/LICENSE) file for more info.
 

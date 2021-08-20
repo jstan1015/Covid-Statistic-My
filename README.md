@@ -1,24 +1,35 @@
-# my-covid-statistic
+# :chart: Covid-Statistic-My
 
-## Project setup
+The purpose of Covid-Statistic-My is to tracking and displaying out up-to-date covid info in Malaysia.
+
+## :man_technologist: Technologies
+1. Vue 3
+2. Bootstrap 5
+
+## :gear: API
+* [Coronavirus stats in Malaysia](https://apify.com/zuzka/covid-my)
+
+## :hammer: Setup at Local Environment
+* Project setup
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+* Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+* Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Lints and fixes files
+* Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## :octocat: Author
+[Jason Tan](https://github.com/jstan1015)
+
+## :bookmark_tabs: Licenses
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/jonathanlee06/WellSafe/blob/master/LICENSE) file for more info.
+

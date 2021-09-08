@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer container-fluid bg-light">
+    <footer class="footer container-fluid bg-dark">
       <small class="text-muted fw-bold">CovidStatisticMy@2021</small>
     </footer>
 </template>

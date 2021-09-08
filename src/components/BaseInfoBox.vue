@@ -52,9 +52,6 @@ export default {
 </script>
 
 <style scoped>
-svg{
-
-}
 .small-box{
     padding-bottom: 10px;
     padding-right: 10px !important;

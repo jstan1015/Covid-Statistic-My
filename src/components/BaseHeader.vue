@@ -1,13 +1,10 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+<nav class="navbar navbar-expand-lg w-100" :class="[$store.getters.doneChangeTheme ? 'navbar-light bg-light' : 'navbar-dark bg-dark']">
   <div class="container-fluid">
     <a class="navbar-brand">
       <span class="h4">Covid Statistic MY</span>
     </a>
-    <div class="px-4">
-      <font-awesome-icon :icon="['fas', 'head-side-mask']" size="lg" pull="right" style="vertical-align: middle;" />
-    </div>
-    
+    <ThemeSwitcher />
     
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,20 +42,24 @@
 </template>
 
 <script>
+import ThemeSwitcher from './ThemeSwitcher.vue'
+
 export default {
   name: 'BaseHeader',
-  // data() {
-  //   return {
-  //     searchInput: null
-  //   }
-  // },
-  // methods: {
-  //   search(){
-  //     if(this.searchInput!=null && this.searchInput.trim()!=""){
-  //       window.open(`https://www.google.com/search?q=${this.searchInput}`, "_blank");
-  //     }
-  //   }
-  // },
+  components:{
+    ThemeSwitcher,
+  },
+  props: {
+    isDefaultTheme: {
+      type: Boolean
+    },
+  },
+  data() {
+    
+  },
+  mounted () {    
+    console.log(this.isDefaultTheme)
+  }
 }
 </script>
 

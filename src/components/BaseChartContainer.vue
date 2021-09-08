@@ -1,6 +1,6 @@
 <template>
   <div class="card h-100">
-    <div class="card-header bg-dark text-white">
+    <div class="card-header" :class ="[$store.getters.doneChangeTheme ? '' : 'bg-dark text-white']">
       <h5 class="card-heading">Data Visualization</h5>
     </div>
     <div class="card-body">

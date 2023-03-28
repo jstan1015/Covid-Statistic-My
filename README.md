@@ -1,5 +1,5 @@
 # :chart: Covid-Statistic-My
-The purpose of Covid-Statistic-My is to tracking and displaying out up-to-date covid info in Malaysia.
+The purpose of Covid-Statistic-My is to tracking and displaying out up-to-date covid info in Malaysia..
 * [Live Preview](https://jstan1015.github.io/Covid-Statistic-My/)
 
 ## :man_technologist: Technologies

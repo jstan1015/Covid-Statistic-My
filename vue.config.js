@@ -1,5 +1,3 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/Covid-Statistic-My/'
-    : '/'
+    publicPath: process.env.NODE_ENV === 'production' ? '/Covid-Statistic-My/' : '/'
 }

@@ -76,7 +76,7 @@ export default {
         this.recovered = this.data.recovered
         this.deceased = this.data.deceased
         this.inICU = this.data.inICU
-        this.lastUpdatedDate = this.changeDateToLocale(this.data.lastUpdatedAtSource)
+        this.lastUpdatedDate = this.changeDateToLocale(this.data.lastUpdatedAtApify)
         this.source = this.data.sourceUrl
       })
       .catch(error => {

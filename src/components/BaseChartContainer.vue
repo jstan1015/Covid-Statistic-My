@@ -69,10 +69,10 @@ export default {
           yearMonth = date.getFullYear() + "/" + (date.getMonth()+1);
           if(tempYearMonth == null || tempYearMonth != yearMonth){
             if(count < 12){
-              yearlyTotalPositive.push(data[i]['testedPositive'])
-              yearlyTotalRecovered.push(data[i]['recovered'])
-              yearlyTotalActiveCases.push(data[i]['activeCases'])
-              yearlyTotalICU.push(data[i]['inICU'])
+              yearlyTotalPositive.push(data[i]['testedPositive'] || 0 )
+              yearlyTotalRecovered.push(data[i]['recovered'] || 0)
+              yearlyTotalActiveCases.push(data[i]['activeCases'] || 0)
+              yearlyTotalICU.push(data[i]['inICU'] || 0)
               tempYearMonth = yearMonth
               count++
             }

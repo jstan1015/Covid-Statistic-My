@@ -17,9 +17,9 @@ export default {
   mounted() {
     let id = null
     let chartName = null
-    let chartNames = ['Total Tested Positive', 'Total Recovered', 'Total Active Cases', 'Total in ICU']
-    let borderColors = ['rgba(13, 110, 253, 1)', 'rgba(25, 135,	84, 1)', 'rgba(255, 193, 7, 1)', 'rgb(220,53,69, 1)']
-    let backgroundColors = ['rgba(0, 0, 255, 0.6)', 'rgba(25, 135,	84, 0.6)', 'rgba(255, 193, 7, 0.6)', 'rgb(220, 53, 69, 0.6)']
+    const chartNames = ['Total Tested Positive', 'Total Recovered', 'Total Active Cases', 'Total in ICU']
+    const borderColors = ['rgba(13, 110, 253, 1)', 'rgba(25, 135,	84, 1)', 'rgba(255, 193, 7, 1)', 'rgb(220,53,69, 1)']
+    const backgroundColors = ['rgba(0, 0, 255, 0.6)', 'rgba(25, 135,	84, 0.6)', 'rgba(255, 193, 7, 0.6)', 'rgb(220, 53, 69, 0.6)']
     for(const x in this.chartData){
       id = "chart"+ [x]
       var canvas = document.createElement("canvas");
@@ -68,7 +68,8 @@ export default {
             }],
             yAxes: [{
               ticks: {
-                beginAtZero: false
+                precision: 0,
+                beginAtZero: this.checkDataSum(data),
               },
               scaleLabel: {
                 display: true,
@@ -81,6 +82,12 @@ export default {
           }
         }
       })
+    },
+    checkDataSum(data){
+      let sum = data.reduce(function(a, b){
+        return a + b;
+      });
+      return (sum == 0);
     }
   }
 }
